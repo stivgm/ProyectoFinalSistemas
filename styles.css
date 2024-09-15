@@ -4,9 +4,11 @@
     box-sizing: border-box;
 }
 
+/* Fondo de la página */
 body {
     font-family: 'Press Start 2P', cursive; /* Estilo retro de videojuegos */
-    background-color: #121212; /* Color oscuro de fondo */
+    background: url('ImgPW/fondo.png') no-repeat center center fixed; /* Ruta a la imagen de fondo */
+    background-size: cover; /* Hace que la imagen de fondo cubra toda la pantalla */
     color: #fff; /* Texto blanco */
     text-align: center;
     padding: 20px;
