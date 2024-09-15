@@ -3,43 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistemas Operativos - Menú de Videojuego</title>
+    <title>Sistemas Operativos</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- FontAwesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link para incluir íconos desde Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
     <header>
         <h1>Sistemas Operativos</h1>
     </header>
 
-    <div class="game-menu">
+    <section class="game-menu">
         <div class="menu-option">
-            <a href="#charla">
-                <i class="fas fa-comments"></i>
-                <span>Charla</span>
-            </a>
+            <a href="#charla"><i class="fas fa-comments"></i> Opción 1: Charla</a>
         </div>
         <div class="menu-option">
-            <a href="#algoritmo">
-                <i class="fab fa-java"></i>
-                <span>Algoritmo de procesos en Java</span>
-            </a>
+            <a href="#algoritmo-java"><i class="fab fa-java"></i> Opción 2: Algoritmo de procesos en Java</a>
         </div>
         <div class="menu-option">
-            <a href="#instalacion">
-                <i class="fas fa-network-wired"></i>
-                <span>Instalación de sistema operativo en otro dispositivo</span>
-            </a>
+            <a href="#instalacion-sistema"><i class="fas fa-network-wired"></i> Opción 3: Instalación de sistema operativo en otro dispositivo</a>
         </div>
         <div class="menu-option">
-            <a href="#linux">
-                <i class="fab fa-linux"></i>
-                <span>Creación de otro sistema operativo</span>
-            </a>
+            <a href="#creacion-sistema"><i class="fas fa-linux"></i> Opción 4: Creación de otro sistema operativo</a>
         </div>
-    </div>
+    </section>
 
+    <!-- Botón con el icono de muchas personas -->
+    <button id="peopleButton" class="floating-btn">
+        <i class="fas fa-users"></i>
+    </button>
+
+    <!-- Botón para ocultar todo y mostrar el fondo -->
+    <button id="toggleBackgroundButton" class="floating-btn">
+        <i class="fas fa-image"></i>
+    </button>
+
+    <script src="truquito.js"></script>
 </body>
 </html>

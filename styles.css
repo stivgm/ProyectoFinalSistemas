@@ -6,10 +6,10 @@
 
 /* Fondo de la página */
 body {
-    font-family: 'Press Start 2P', cursive; /* Estilo retro de videojuegos */
-    background: url('ImgPW/fondo.png') no-repeat center center fixed; /* Ruta a la imagen de fondo */
-    background-size: cover; /* Hace que la imagen de fondo cubra toda la pantalla */
-    color: #fff; /* Texto blanco */
+    font-family: 'Press Start 2P', cursive;
+    background: url('ImgPW/fondo.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
     text-align: center;
     padding: 20px;
 }
@@ -18,8 +18,8 @@ body {
 header h1 {
     font-size: 3rem;
     margin-bottom: 50px;
-    color: #00FF00; /* Verde fosforescente como en algunos videojuegos */
-    text-shadow: 3px 3px #000; /* Sombra del título */
+    color: #00FF00;
+    text-shadow: 3px 3px #000;
 }
 
 /* Estilo del menú */
@@ -28,7 +28,7 @@ header h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px; /* Espacio entre los botones */
+    gap: 30px;
     margin: 0 auto;
     max-width: 500px;
 }
@@ -65,22 +65,46 @@ header h1 {
     margin-bottom: 10px;
 }
 
-/* Adaptaciones responsivas con media queries */
+/* Estilos de los botones flotantes */
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #00FF00;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s;
+}
 
-/* Para pantallas de menos de 768px (celulares y tablets pequeñas) */
+.floating-btn:hover {
+    background-color: #00cc00;
+}
+
+/* Aumenta el espacio entre botones flotantes */
+#toggleBackgroundButton {
+    bottom: 80px; /* Mueve el botón de mostrar fondo hacia arriba para que no se superpongan */
+}
+
+/* Adaptaciones responsivas con media queries */
 @media (max-width: 768px) {
-    /* Disminuir el tamaño del título */
     header h1 {
         font-size: 2rem;
         margin-bottom: 30px;
     }
 
-    /* Ajustar el ancho de las opciones del menú para pantallas pequeñas */
     .menu-option {
-        width: 90%; /* Tomará el 90% del ancho de la pantalla */
+        width: 90%;
     }
 
-    /* Disminuir el tamaño del texto y los iconos dentro de los botones del menú */
     .menu-option a {
         font-size: 1rem;
     }
@@ -89,25 +113,20 @@ header h1 {
         font-size: 2rem;
     }
 
-    /* Aumentar el espacio entre las opciones del menú */
     .game-menu {
-        gap: 20px; /* Espacio un poco más reducido entre las opciones en pantallas pequeñas */
+        gap: 20px;
     }
 }
 
-/* Para pantallas de menos de 480px (celulares pequeños) */
 @media (max-width: 480px) {
-    /* Título más pequeño para pantallas de celulares pequeños */
     header h1 {
         font-size: 1.5rem;
     }
 
-    /* Aumentar el tamaño de las opciones del menú para más accesibilidad */
     .menu-option {
         padding: 15px;
     }
 
-    /* Tamaño aún más reducido para texto e iconos */
     .menu-option a {
         font-size: 0.9rem;
     }
