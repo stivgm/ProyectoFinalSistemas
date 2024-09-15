@@ -5,78 +5,75 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    padding-top: 50px;
-}
-
-nav {
-    background-color: #333;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-.menu {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.menu ul {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    padding: 10px 0;
-}
-
-.menu ul li {
+    font-family: 'Press Start 2P', cursive; /* Estilo retro de videojuegos */
+    background-color: #121212; /* Color oscuro de fondo */
+    color: #fff; /* Texto blanco */
     text-align: center;
-}
-
-.menu ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    display: block;
-    padding: 10px 20px;
-}
-
-.menu ul li a i {
-    margin-right: 8px;
-}
-
-.menu ul li a:hover {
-    background-color: #575757;
-    border-radius: 5px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .menu ul {
-        flex-direction: column;
-        padding: 0;
-    }
-    
-    .menu ul li {
-        margin: 10px 0;
-    }
-}
-
-section {
-    max-width: 1200px;
-    margin: 80px auto;
     padding: 20px;
-    background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
 }
 
-h1 {
+/* Header estilo videojuego */
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    color: #00FF00; /* Verde fosforescente como en algunos videojuegos */
+    text-shadow: 3px 3px #000; /* Sombra del título */
+}
+
+/* Estilo del menú */
+.game-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+/* Estilo de las opciones del menú */
+.menu-option {
+    background-color: #222;
+    border: 2px solid #00FF00;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Animaciones al pasar el ratón */
+.menu-option:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #00FF00, 0 0 40px #00FF00;
+}
+
+.menu-option a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+/* Tamaño de los iconos */
+.menu-option i {
+    font-size: 3rem;
     margin-bottom: 10px;
 }
 
-p {
-    font-size: 16px;
-    line-height: 1.6;
+/* Efecto en pantallas más pequeñas */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .game-menu {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-option {
+        width: 90%;
+    }
 }
