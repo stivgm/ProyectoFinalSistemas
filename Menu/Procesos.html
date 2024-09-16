@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manual de Usuario - Planificación de Procesos</title>
+    <title>Manual de Usuario y Descarga - Planificación de Procesos</title>
     <style>
         body {
             margin: 0;
@@ -18,26 +18,65 @@
             align-items: center;
         }
 
-        h1 {
+        h1, h2 {
             color: white;
-            font-size: 2rem;
             text-align: center;
             margin: 20px 0;
         }
 
-        .pdf-container {
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        .content-container {
             width: 80%;
-            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+
+        .pdf-container {
+            width: 100%;
+            height: 70vh;
             background-color: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
         }
 
         .pdf-viewer {
             width: 100%;
             height: 100%;
             border: none;
+        }
+
+        .download-section {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .download-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .download-button:hover {
+            background-color: #45a049;
         }
 
         .back-button {
@@ -66,10 +105,18 @@
     </style>
 </head>
 <body>
-    <h1>Manual de Usuario - Planificación de Procesos</h1>
-    
-    <div class="pdf-container">
-        <iframe src="../Descargas/Manual.pdf" class="pdf-viewer" title="Manual de Usuario PDF"></iframe>
+    <div class="content-container">
+        <h1>Manual de Usuario - Planificación de Procesos</h1>
+        
+        <div class="pdf-container">
+            <iframe src="Manual.pdf" class="pdf-viewer" title="Manual de Usuario PDF"></iframe>
+        </div>
+
+        <div class="download-section">
+            <h2>Descargar Aplicación</h2>
+            <a href="https://github.com/stivgm/ProyectoFinalSistemas/blob/main/Descargas/Algoritmo_Proceso.exe" class="download-button" download>Descargar Aplicación</a>
+            <a href="https://github.com/stivgm/ProyectoFinalSistemas/blob/main/Descargas/PruebaRR.rar" class="download-button" download>Descargar Código Fuente</a>
+        </div>
     </div>
 
     <a href="../index.html" class="back-button">⬅</a>
