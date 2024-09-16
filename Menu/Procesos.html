@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manual de Usuario y Descarga - Planificación de Procesos</title>
+    <title>Algoritmos de Procesos</title>
     <style>
         body {
             margin: 0;
@@ -19,7 +20,7 @@
         }
 
         h1, h2 {
-            color: white;
+            color: #4CAF50;
             text-align: center;
             margin: 20px 0;
         }
@@ -33,7 +34,8 @@
         }
 
         .content-container {
-            width: 80%;
+            width: 90%;
+            max-width: 1200px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -57,11 +59,13 @@
         }
 
         .download-section {
+            width: 100%;
             background-color: rgba(255, 255, 255, 0.8);
             padding: 20px;
             border-radius: 10px;
             text-align: center;
             margin-top: 20px;
+            box-sizing: border-box;
         }
 
         .download-button {
@@ -82,11 +86,10 @@
         .back-button {
             position: fixed;
             bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
+            right: 30px;
             width: 60px;
             height: 60px;
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: #4CAF50;
             color: white;
             border: none;
             border-radius: 50%;
@@ -100,25 +103,81 @@
         }
 
         .back-button:hover {
-            background-color: rgba(0, 0, 0, 0.9);
+            background-color: #45a049;
+        }
+
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            .content-container {
+                width: 95%;
+            }
+
+            .pdf-container {
+                height: 50vh;
+            }
+
+            .back-button {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 1.2rem;
+            }
+
+            h2 {
+                font-size: 1rem;
+            }
+
+            .pdf-container {
+                height: 40vh;
+            }
+
+            .download-button {
+                padding: 8px 16px;
+            }
+
+            .back-button {
+                width: 40px;
+                height: 40px;
+                font-size: 16px;
+                bottom: 15px;
+                right: 15px;
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="content-container">
         <h1>Manual de Usuario - Planificación de Procesos</h1>
-        
+
         <div class="pdf-container">
-            <iframe src="Manual.pdf" class="pdf-viewer" title="Manual de Usuario PDF"></iframe>
+            <iframe src="../Descargas/Manual.pdf" class="pdf-viewer" title="Manual de Usuario PDF"></iframe>
         </div>
 
         <div class="download-section">
             <h2>Descargar Aplicación</h2>
-            <a href="https://github.com/stivgm/ProyectoFinalSistemas/blob/main/Descargas/Algoritmo_Proceso.exe" class="download-button" download>Descargar Aplicación</a>
-            <a href="https://github.com/stivgm/ProyectoFinalSistemas/blob/main/Descargas/PruebaRR.rar" class="download-button" download>Descargar Código Fuente</a>
+            <a href="https://github.com/stivgm/ProyectoFinalSistemas/blob/main/Descargas/Algoritmo_Proceso.exe"
+                class="download-button" download>Descargar Aplicación</a>
+            <a href="https://github.com/stivgm/ProyectoFinalSistemas/blob/main/Descargas/PruebaRR.rar"
+                class="download-button" download>Descargar Código Fuente</a>
         </div>
     </div>
 
     <a href="../index.html" class="back-button">⬅</a>
 </body>
+
 </html>
