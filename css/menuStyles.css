@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo de la página */
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: url('../ImgPW/fondo.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header estilo videojuego */
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    color: #00FF00;
+    text-shadow: 3px 3px #000;
+}
+
+/* Estilo del menú */
+.game-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+/* Estilo de las opciones del menú */
+.menu-option {
+    background-color: #222;
+    border: 2px solid #00FF00;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Animaciones al pasar el ratón */
+.menu-option:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #00FF00, 0 0 40px #00FF00;
+}
+
+.menu-option a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+/* Tamaño de los iconos */
+.menu-option i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* Estilos de los botones flotantes */
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #00FF00;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s;
+}
+
+.floating-btn:hover {
+    background-color: #00cc00;
+}
+
+/* Aumenta el espacio entre botones flotantes */
+#toggleBackgroundButton {
+    bottom: 80px; /* Mueve el botón de mostrar fondo hacia arriba para que no se superpongan */
+}
+
+/* Adaptaciones responsivas con media queries */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .menu-option {
+        width: 90%;
+    }
+
+    .menu-option a {
+        font-size: 1rem;
+    }
+
+    .menu-option i {
+        font-size: 2rem;
+    }
+
+    .game-menu {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .menu-option {
+        padding: 15px;
+    }
+
+    .menu-option a {
+        font-size: 0.9rem;
+    }
+
+    .menu-option i {
+        font-size: 1.5rem;
+    }
+}
+
+
+.item {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    padding-top: 75px;
+    background: #ccc;
+    text-align: center;
+    color: #FFF;
+    font-size: 3em;
+}
