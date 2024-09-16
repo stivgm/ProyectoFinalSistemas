@@ -3,26 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Procesos de algoritmos</title>
+    <title>Manual de Usuario - Planificación de Procesos</title>
     <style>
-        /* Estilos globales */
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-image: url('../ImgPW/fondo.png'); /* Ruta relativa al fondo */
+            background-image: url('../ImgPW/fondo.png');
             background-size: cover;
             background-position: center;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            position: relative;
         }
 
-        /* Estilo del botón circular */
+        h1 {
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .pdf-container {
+            width: 80%;
+            height: 80vh;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .pdf-viewer {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
         .back-button {
-            position: absolute;
+            position: fixed;
             bottom: 30px;
             left: 50%;
             transform: translateX(-50%);
@@ -44,20 +63,15 @@
         .back-button:hover {
             background-color: rgba(0, 0, 0, 0.9);
         }
-
-        /* Estilo del título */
-        h1 {
-            color: white;
-            font-size: 3rem;
-            text-align: center;
-        }
     </style>
 </head>
 <body>
-    <!-- Título de la página -->
-    <h1>Procesos de algoritmos</h1>
+    <h1>Manual de Usuario - Planificación de Procesos</h1>
+    
+    <div class="pdf-container">
+        <iframe src="../Descargas/Manual.pdf" class="pdf-viewer" title="Manual de Usuario PDF"></iframe>
+    </div>
 
-    <!-- Botón de regreso a index.html -->
     <a href="../index.html" class="back-button">⬅</a>
 </body>
 </html>
