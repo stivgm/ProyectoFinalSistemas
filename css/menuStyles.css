@@ -22,128 +22,84 @@ header h1 {
     text-shadow: 3px 3px #000;
 }
 
-/* Estilo del menú */
-.game-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    margin: 0 auto;
-    max-width: 500px;
+h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 3px 3px #000;
 }
 
-/* Estilo de las opciones del menú */
-.menu-option {
-    background-color: #222;
-    border: 2px solid #00FF00;
-    border-radius: 15px;
-    padding: 20px;
-    width: 100%;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-/* Animaciones al pasar el ratón */
-.menu-option:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px #00FF00, 0 0 40px #00FF00;
-}
-
-.menu-option a {
+a {
+    color: #ffffff;
     text-decoration: none;
-    color: #fff;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 2rem;
+}
+
+.main-header {
+    height: 30vh;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.2rem;
-}
-
-/* Tamaño de los iconos */
-.menu-option i {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-/* Estilos de los botones flotantes */
-.floating-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background-color: #00FF00;
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 24px;
-    display: flex;
     justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transition: background-color 0.3s;
-}
-
-.floating-btn:hover {
-    background-color: #00cc00;
-}
-
-/* Aumenta el espacio entre botones flotantes */
-#toggleBackgroundButton {
-    bottom: 80px; /* Mueve el botón de mostrar fondo hacia arriba para que no se superpongan */
-}
-
-/* Adaptaciones responsivas con media queries */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-        margin-bottom: 30px;
-    }
-
-    .menu-option {
-        width: 90%;
-    }
-
-    .menu-option a {
-        font-size: 1rem;
-    }
-
-    .menu-option i {
-        font-size: 2rem;
-    }
-
-    .game-menu {
-        gap: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    .menu-option {
-        padding: 15px;
-    }
-
-    .menu-option a {
-        font-size: 0.9rem;
-    }
-
-    .menu-option i {
-        font-size: 1.5rem;
-    }
-}
-
-
-.item {
-    width: 200px;
-    height: 200px;
-    margin: 50px auto;
-    padding-top: 75px;
-    background: #ccc;
     text-align: center;
-    color: #FFF;
-    font-size: 3em;
+}
+
+.main-header h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.main-header h1 span {
+    color: #b50d10;
+}
+
+.main-header p {
+    font-size: 2rem;
+}
+
+img {
+    width: 100%;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    background: #333333;
+    margin-bottom: 2rem;
+}
+
+.card h3 {
+    margin-bottom: 2rem;
+}
+
+.card img {
+    height: 400px;
+}
+
+.card > div {
+    padding: 2rem;
+}
+
+.card:nth-child(even) img {
+    order: 2;
+}
+
+@media(max-width:600px) {
+    .card {
+        display: block;
+    }
 }
