@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: url('../ImgPW/fondo.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    color: #00FF00;
+    text-shadow: 3px 3px #000;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    text-shadow: 2px 2px #000;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.download-section {
+    margin-top: 40px;
+}
+
+.download-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 25px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #333333;
+    text-decoration: none;
+    border: 2px solid #00FF00;
+    border-radius: 5px;
+    text-shadow: 2px 2px #000;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #00FF00;
+    color: #333333;
+}
