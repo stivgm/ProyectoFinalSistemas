@@ -5,32 +5,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NoCompilos OS</title>
-    <link rel="stylesheet" href="css/sisOp.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/sisOp.css">
     <!-- Link para incluir íconos desde Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background: url('/ImgPW/fondo.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+    </style>
 </head>
 </head>
 
 <body>
+<div class="container">
     <header>
         <h1>NoCompilos OS</h1>
     </header>
 
-    <section class="content">
-        <h2>Acerca de NoCompilos</h2>
-        <p>NoCompilos es un sistema operativo basado en Debian, enfocado en la programación. Este sistema ha sido diseñado específicamente para desarrolladores, ofreciendo herramientas optimizadas para el desarrollo y pruebas de software.</p>
-
-        <div class="download-section">
-            <h2>Descargas</h2>
-            <p>Puedes descargar el ISO de NoCompilos OS y su manual de usuario utilizando los enlaces a continuación:</p>
-            <a href="ruta/al/archivo.iso" class="download-btn" download><i class="fas fa-download"></i> Descargar ISO</a>
-            <a href="Descargas/Descargas_ISO/MANUAL.pdf" class="download-btn" download><i class="fas fa-book"></i> Descargar Manual</a>
-        </div>
+    <section class="hero-section">
+        <h2>Tu Entorno de Desarrollo Definitivo</h2>
+        <p>NoCompilos OS es una distribución Linux especializada diseñada por desarrolladores, para desarrolladores. Basada en Debian, combina potencia, estabilidad y facilidad de uso en un sistema operativo listo para programar desde el primer momento.</p>
+        <p>Olvídate de las complejas configuraciones iniciales y céntrate en lo que realmente importa: tu código.</p>
     </section>
 
-    <script src="truquito.js"></script>
+    <div class="features-grid">
+        <div class="feature-card">
+            <h3>Herramientas Pre-instaladas</h3>
+            <p>Incluye los IDEs y editores más populares: VS Code, Vim, Eclipse, NetBeans y más. Todo configurado y listo para usar.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Soporte Multi-lenguaje</h3>
+            <p>Desarrolla en Python, Java, C++, Ruby, Node.js y más. Todos los compiladores y herramientas de desarrollo incluidas.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Control de Versiones</h3>
+            <p>Git pre-configurado con herramientas visuales y terminales para gestionar tus proyectos eficientemente.</p>
+        </div>
+    </div>
+
+    <div class="banner">
+        <!-- Primera fila - movimiento hacia la izquierda -->
+        <div class="slider">
+            <div class="slide-track">
+                <!-- Primer set de imágenes -->
+                <div class="slide">
+                    <img src="/ImgPW/vim.png" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img src="/ImgPW/visualStudio.png" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <img src="/ImgPW/VS%20Code.png" alt="Image 3">
+                </div>
+                <div class="slide">
+                    <img src="/ImgPW/eclipse.png" alt="Image 4">
+                </div>
+                <div class="slide">
+                    <img src="/ImgPW/netbeans.png" alt="Image 5">
+                </div>
+                <div class="slide">
+                    <img src="/ImgPW/Notepad++.png" alt="Image 6">
+                </div>
+                <!-- Duplicado de imágenes para hacer el loop continuo -->
+                <div class="slide">
+                    <img src="/ImgPW/vim.png" alt="Image 1">
+                </div> <p></p>
+                <div class="slide">
+                    <img src="/ImgPW/visualStudio.png" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <img src="/ImgPW/VS%20Code.png" alt="Image 3">
+                </div>
+                <div class="slide">
+                    <img src="/ImgPW/eclipse.png" alt="Image 4">
+                </div>
+                <div class="slide">
+                    <img src="/ImgPW/netbeans.png" alt="Image 5">
+                </div>
+                <div class="slide">
+                    <img src="/ImgPW/Notepad++.png" alt="Image 6">
+                </div>
+            </div>
+        </div>
+
+        <!-- Segunda fila - movimiento hacia la derecha -->
+        <div class="slider">
+            <div class="slide-track slide-track-reverse">
+                <!-- Primer set de imágenes -->
+                <div class="slide">
+                    <img src="/ImgPW/java.png" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img src="/ImgPW/Python.png" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <img src="/ImgPW/ruby.png" alt="Image 3">
+                </div>
+                <div class="slide">
+                    <img src="/ImgPW/github.png" alt="Image 4">
+                </div>
+                <div class="slide">
+                    <img src="/ImgPW/c++.png" alt="Image 5">
+                </div>
+                <div class="slide">
+                    <img src="/ImgPW/nodejs.png" alt="Image 6">
+                </div>
+                <!-- Duplicado de imágenes para hacer el loop continuo -->
+                <div class="slide">
+                    <img src="/ImgPW/java.png" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img src="/ImgPW/Python.png" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <img src="/ImgPW/ruby.png" alt="Image 3">
+                </div>
+                <div class="slide">
+                    <img src="/ImgPW/github.png" alt="Image 4">
+                </div>
+                <div class="slide">
+                    <img src="/ImgPW/c++.png" alt="Image 5">
+                </div>
+                <div class="slide">
+                    <img src="/ImgPW/nodejs.png" alt="Image 6">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="download-section">
+        <h2>Comienza a Desarrollar Hoy</h2>
+        <p>Descarga NoCompilos OS y únete a la comunidad de desarrolladores que ya han optimizado su flujo de trabajo.</p>
+        <a href="https://drive.google.com/file/d/1gn0PEVQ0FBOQxyc2Yx2NdTNuIMv0kYm7/view?usp=sharing" class="download-btn">Descargar ISO</a>
+        <a href="/Descargas/Descargas_ISO/MANUAL.pdf" class="download-btn">Manual de Usuario</a>
+    </div>
+
+
+</div>
+
+<!-- Botón para regresar al index -->
+<a href="../index.html" class="back-button"><i class="fas fa-arrow-left"></i></a>
+<script src="truquito.js"></script>
 </body>
 
 </html>

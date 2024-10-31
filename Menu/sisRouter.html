@@ -12,94 +12,74 @@
 </head>
 
 <body>
-    <div class="letter-page">
-        <header>
-            <h1><i class="fas fa-network-wired"></i> Instalación de Sistema Operativo en Otro Dispositivo</h1>
-        </header>
-
-        <section class="letter-content">
-            <p>
-                Este tutorial fue realizado por un grupo de estudiantes con el objetivo de demostrar que cualquier
-                persona, con un poco de conocimiento técnico, puede instalar un sistema operativo en un dispositivo
-                compatible. A continuación, te guiamos a través del proceso de instalación de un sistema operativo en un
-                router u otro dispositivo embebido.
-            </p>
-
-            <h2>Requisitos Previos</h2>
-            <ul>
-                <li>Un dispositivo de destino, como un router.</li>
-                <li>Un sistema operativo adecuado, como OpenWRT o una distribución de Linux para dispositivos embebidos.
-                </li>
-                <li>Conexiones de red y software de instalación (TFTP, SSH, etc.).</li>
-            </ul>
-
-            <h2>Pasos Generales de Instalación</h2>
-            <p>El proceso de instalación varía según el tipo de dispositivo y el sistema operativo. Sin embargo, los
-                pasos generales son los siguientes:</p>
-            <ol>
-                <li>Conectar el dispositivo al PC mediante una interfaz de red o conexión directa.</li>
-                <li>Acceder a la interfaz de administración del dispositivo a través de la IP por defecto o mediante
-                    consola.</li>
-                <li>Subir el archivo del sistema operativo al dispositivo.</li>
-                <li>Ejecutar el proceso de instalación y reiniciar el dispositivo.</li>
-                <li>Configurar los parámetros de red y acceso después de la instalación.</li>
-            </ol>
-
-            <h2>Práctica: Instalación de OpenWRT en Linksys EA6350 v3</h2>
-            <p>Para la práctica, instalaremos el sistema operativo OpenWRT en el router <strong>Linksys EA6350
-                    v3</strong>, un dispositivo embebido comúnmente utilizado para proyectos de redes personalizadas.
-            </p>
-
-            <!-- Imagen del router con marco verde -->
-            <div class="router-image">
-                <img src="../ImgPW/Router.png" alt="Linksys EA6350 v3" />
-            </div>
-
-            <h2>¿Por Qué Instalar OpenWRT?</h2>
-            <p>
-                OpenWRT es un sistema operativo de código abierto basado en Linux, diseñado específicamente para routers
-                y otros dispositivos embebidos. Ofrece una amplia gama de beneficios:
-            </p>
-            <ul>
-                <li>Mayor control sobre el dispositivo y sus funcionalidades.</li>
-                <li>Compatibilidad con software adicional, como VPNs, QoS, y otros servicios avanzados.</li>
-                <li>Actualizaciones regulares de seguridad.</li>
-                <li>Mejora del rendimiento del hardware del dispositivo.</li>
-            </ul>
-
-            <h2>Previsualización del Manual de Instalación</h2>
-            <p>A continuación, puedes previsualizar el manual completo:</p>
-
-            <!-- Previsualización del manual en PDF -->
-            <div class="pdf-preview">
-                <iframe src="../Descargas/Descargas_Router/Manual Router.pdf" width="100%" height="600px"></iframe>
-            </div>
-
-            <h2>Manual de Instalación</h2>
-            <p>Si deseas descargar el manual completo en formato PDF, haz clic en el siguiente enlace:</p>
-
-            <!-- Enlace para descargar el manual en PDF -->
-            <div class="manual-download">
-                <a href="../Descargas/Descargas_Router/Manual Router.pdf"
-                    download="Manual_Instalacion_Sistema_Operativo.pdf">
-                    <i class="fas fa-file-pdf"></i> Descargar Manual en PDF
-                </a>
-            </div>
-
-            <h2>Video Tutorial</h2>
-            <p>También puedes ver este video tutorial para obtener más detalles sobre la instalación de OpenWRT:</p>
-
-            <!-- Enlace centrado al video -->
-            <div class="video-link">
-                <a href="https://www.youtube.com/watch?v=MwPbHuOjgSc" target="_blank">
-                    <i class="fas fa-video"></i> Ver Video Tutorial en YouTube
-                </a>
-            </div>
-        </section>
-
-        <!-- Botón para regresar al index -->
-        <a href="../index.html" class="back-button"><i class="fas fa-arrow-left"></i></a>
+<div class="letter-page">
+    <div class="hero-section">
+        <h1>Instalación de Sistema Operativo en Dispositivos Embebidos</h1>
+        <p>Una guía completa para personalizar y potenciar tu router con OpenWRT</p>
+        <h2>¿Qué es OpenWRT?</h2>
+        <p>OpenWRT es un sistema operativo de código abierto basado en Linux, diseñado para dispositivos embebidos como routers y switches. Ofrece una interfaz de usuario amigable y una amplia variedad de características avanzadas para personalizar tu red doméstica o empresarial.</p>
     </div>
+
+    <div class="feature-grid">
+        <div class="feature-card">
+            <h3>Mayor Control</h3>
+            <p>Obtén control total sobre tu dispositivo y personaliza cada aspecto de su funcionamiento.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Mejor Rendimiento</h3>
+            <p>Optimiza el rendimiento de tu hardware con un sistema operativo ligero y eficiente.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Más Seguridad</h3>
+            <p>Actualizaciones regulares de seguridad y control total sobre tu red.</p>
+        </div>
+    </div>
+
+    <div class="steps-section">
+        <h2>Proceso de Instalación</h2>
+        <div class="step">
+            <h3>1. Preparación</h3>
+            <p>Asegúrate de tener todos los requisitos necesarios:</p>
+            <ul>
+                <li>Router compatible (Linksys EA6350 v3)</li>
+                <li>Imagen de OpenWRT</li>
+                <li>Cable Ethernet</li>
+                <li>Computadora con navegador web</li>
+            </ul>
+        </div>
+        <div class="step">
+            <h3>2. Respaldo</h3>
+            <p>Realiza una copia de seguridad de tu configuración actual antes de comenzar.</p>
+        </div>
+        <div class="step">
+            <h3>3. Instalación</h3>
+            <p>Sigue nuestro proceso paso a paso para una instalación exitosa y segura.</p>
+        </div>
+    </div>
+
+    <div class="router-image">
+        <img src="../ImgPW/Router.png" alt="Linksys EA6350 v3">
+        <p>Router Linksys EA6350 v3 - Compatible con OpenWRT</p>
+    </div>
+
+    <div class="download-section">
+        <a href="../Descargas/Descargas_Router/Manual%20Router.pdf" class="download-button" download="Manual_Instalacion_OpenWRT.pdf">
+            Descargar Manual Completo
+        </a>
+    </div>
+
+    <div class="video-section">
+        <h2>Tutorial en Video</h2>
+        <p>¿Prefieres una guía visual? Mira nuestro tutorial paso a paso.</p>
+        <a href="https://www.youtube.com/watch?v=MwPbHuOjgSc" class="video-button" target="_blank">
+            Ver Tutorial en YouTube
+        </a>
+    </div>
+</div>
+
+<!-- Botón para regresar al index -->
+<a href="../index.html" class="back-button"><i class="fas fa-arrow-left"></i></a>
+
 </body>
 
 </html>
