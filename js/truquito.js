@@ -10,3 +10,7 @@ toggleBackgroundButton.addEventListener('mousedown', function() {
 toggleBackgroundButton.addEventListener('mouseup', function() {
     gameMenu.style.display = 'flex'; // Mostrar el menú nuevamente cuando se suelte el botón
 });
+
+document.getElementById('teamButton').addEventListener('click', function() {
+    window.location.href = './Menu/integrantes.html';
+});

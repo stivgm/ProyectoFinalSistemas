@@ -1,11 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Integrantes del Equipo</title>
+    <link rel="stylesheet" href="../css/integ.css">
+    <!-- Link para incluir íconos desde Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="background-container"></div>
     
+    <div class="penguins-grid">
+        <!-- Repite este bloque para cada integrante -->
+        <div class="penguin-card" onclick="openModal('integrante1')">
+            <img src="../ImgPW/iAndrey.jpg" alt="Integrante 1">
+            <h3 style="color: white;">Andrey Emanuel</h3>
+        </div>
+        <!-- Fin del bloque repetible -->
+                 <!-- Repite este bloque para cada integrante -->
+        <div class="penguin-card" onclick="openModal('integrante2')">
+            <img src="../ImgPW/iStiven.png" alt="Integrante 2">
+            <h3 style="color: white;">Stiven Amilcar</h3>
+        </div>
+        <!-- Fin del bloque repetible -->
+                 <!-- Repite este bloque para cada integrante -->
+        <div class="penguin-card" onclick="openModal('integrante3')">
+            <img src="../ImgPW/iRonaldo.png" alt="Integrante 3">
+            <h3 style="color: white;">Ronaldo Monzon</h3>
+        </div>
+        <!-- Fin del bloque repetible -->
+                 <!-- Repite este bloque para cada integrante -->
+        <div class="penguin-card" onclick="openModal('integrante4')">
+            <img src="../ImgPW/iJos.jpg" alt="Integrante 4">
+            <h3 style="color: white;">Josue Gomez</h3>
+        </div>
+        <!-- Fin del bloque repetible -->
+    </div>
+
+    <!-- Modal Template -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <div class="member-info" id="modalContent">
+                <!-- El contenido se llenará dinámicamente -->
+            </div>
+        </div>
+    </div>
+
+    <a href="../index.html" class="back-button"><i class="fas fa-arrow-left"></i></a>
+
+    <script src="../js/integrantes.js"></script>
 </body>
 </html>
